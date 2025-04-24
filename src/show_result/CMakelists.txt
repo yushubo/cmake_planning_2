@@ -1,0 +1,21 @@
+project(show_result)
+# 生成动态库
+add_library(${PROJECT_NAME}
+SHARED
+show_result.cpp
+)
+# 添加使用到的头文件目录
+target_include_directories(${PROJECT_NAME}
+PUBLIC
+${Process_Dir}
+)
+# 动态库链接动态库
+target_link_libraries(${PROJECT_NAME}
+PUBLIC
+process
+)
+# 链接 easys 静态库
+target_link_libraries(${PROJECT_NAME}
+PUBLIC
+easyx
+)

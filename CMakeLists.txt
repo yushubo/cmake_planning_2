@@ -16,5 +16,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 #　设置变量，方便子文件使用
 set(Process_Dir ${CMAKE_SOURCE_DIR}/src/process)
 set(PNC_MAP_Dir ${CMAKE_SOURCE_DIR}/src/pnc_map)
+set(Show_Result_Dir ${CMAKE_SOURCE_DIR}/src/show_result)
 #　添加子目录
 add_subdirectory(src)
