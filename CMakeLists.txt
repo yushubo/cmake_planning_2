@@ -8,6 +8,10 @@ project(planning
 )
 # C++版本
 set(CMAKE_CXX_STANDARD 17)
+
+# 启动测试
+enable_testing()
+
 #设置exe和dll的输出目录
 # PROJECT_SOURCE_DIR 和 CMAKE_SOURCE_DIR 的区别
 # PROJECT_SOURCE_DIR　是会随着　CMakeLists.txt　位置变化　　　　是项目目录
@@ -31,3 +35,4 @@ endif()
 
 #　添加子目录
 add_subdirectory(src)
+add_subdirectory(test/map_test)
